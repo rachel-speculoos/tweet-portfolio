@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tweet Portfolio · Diane Monceret</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f3;
+      color: #111;
+      padding: 48px 24px 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      margin-bottom: 56px;
+    }
+    .site-header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .site-header p {
+      margin-top: 6px;
+      font-size: 15px;
+      color: #666;
+    }
+
+    /* ── Company section ── */
+    .company-section {
+      margin-bottom: 72px;
+    }
+
+    .company-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid #111;
+    }
+    .company-header h2 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+    .company-header .handle {
+      font-size: 14px;
+      color: #888;
+    }
+
+    /* ── Founder sub-section ── */
+    .founder-subsection {
+      margin-top: 40px;
+    }
+    .founder-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: #888;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+    .founder-label::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: #ccc;
+    }
+
+    /* ── Masonry grid ── */
+    .masonry {
+      columns: 3 320px;
+      column-gap: 16px;
+    }
+
+    /* ── Tweet card ── */
+    .tweet-card {
+      break-inside: avoid;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+      margin-bottom: 16px;
+      transition: box-shadow 0.2s;
+    }
+    .tweet-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    .tweet-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .tweet-card .card-footer {
+      padding: 10px 14px;
+      border-top: 1px solid #f0f0f0;
+    }
+    .tweet-card a {
+      font-size: 12px;
+      color: #888;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.15s;
+    }
+    .tweet-card a:hover {
+      color: #111;
+    }
+    .tweet-card a::after {
+      content: '↗';
+      font-size: 11px;
+    }
+
+    @media (max-width: 700px) {
+      body { padding: 32px 16px 60px; }
+      .masonry { columns: 1; }
+      .site-header h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Tweet Portfolio</h1>
+    <p>Social media work · Oasis Protocol &amp; Botanix</p>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════
+       OASIS PROTOCOL
+  ════════════════════════════════════════════════ -->
+  <section class="company-section">
+    <div class="company-header">
+      <h2>Oasis Protocol</h2>
+      <span class="handle">@OasisProtocol</span>
+    </div>
+    <div class="masonry">
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.49.05.png" alt="Been building privacy for over 5 years. You?">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.49.33.png" alt="guys... i think @vitalikbuterin is into privacy">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.49.48.png" alt="What a week, Buenos Aires!">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.50.05.png" alt="*sending $5k onchain* — ethereum / monero / sapphire">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.50.21.png" alt="AWS went down. ROFL didn't.">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.50.39.png" alt="If it can't compute on private data... Oasis is.">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.51.05.png" alt="Data is the new oil. Every leak is a spill.">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.51.17.png" alt="Compute you can't verify = compute you can't trust.">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.51.38.png" alt="Multichain wallet control without bridges — ROFL Primitives">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.51.51.png" alt="web2: they own your data / web3: everyone sees it / sapphire: only you control it">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.52.02.png" alt="We do it for autonomy in a digital world.">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.52.17.png" alt="What happens when you combine ROFL + Sapphire + Hyperliquid? agent_wt3">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.52.36.png" alt="May I meet you (at the TEE party)??">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.53.08.png" alt="Everyone wants AI. Nobody wants surveillance disguised as a feature.">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-12%20at%2011.53.19.png" alt="TEE = trust in hardware. ZK = trust in math.">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       BOTANIX
+  ════════════════════════════════════════════════ -->
+  <section class="company-section">
+    <div class="company-header">
+      <h2>Botanix</h2>
+      <span class="handle">@botanix</span>
+    </div>
+    <div class="masonry">
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.30.46.png" alt="we're early chat — 1.3% own Bitcoin pie chart">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.30.59.png" alt="Orange is the best color.">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.31.29.png" alt="Bitcoin L1 Vault — secured by the strongest settlement layer">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.31.49.png" alt="we love to see it — Bitcoin accepted here">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.32.09.png" alt='"you look happier" — thanks, BTC is up'>
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.32.23.png" alt="Bitcoin in 2013: Magic internet money. Bitcoin in 2026: A global financial settlement layer.">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.32.42.png" alt="THIS. @WillemSchroe — End Fiat Currencies & Inflation">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.33.12.png" alt="cool thing we did recently with @RFYfinance — institutional options yield on Bitcoin">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.33.40.png" alt="Fun fact: 1 stBTC = 1 BTC">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.34.01.png" alt="Real Bitcoiners choose stBTC — comparison table">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.34.17.png" alt="By early 2026, Bitcoin's FDV reached ~$1.94T. This gap is the opportunity.">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.34.34.png" alt="I (30F) bought 1BTC — trust me more than a financial institution">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.34.48.png" alt='"Bitcoin is just a store of value." Okay, and Manhattan is just real estate.'>
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+      <div class="tweet-card">
+        <img src="Screenshot%202026-05-15%20at%2009.35.55.png" alt="Do something with your bitcoin... it's literally programmable.">
+        <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+      </div>
+
+    </div>
+
+    <!-- Willem Schroe sub-section -->
+    <div class="founder-subsection">
+      <div class="founder-label">via @WillemSchroe · Founder</div>
+      <div class="masonry">
+
+        <div class="tweet-card">
+          <img src="Screenshot%202026-05-15%20at%2009.36.47.png" alt="Without self-custody, Bitcoin is just gold. And we already have gold.">
+          <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+        </div>
+
+        <div class="tweet-card">
+          <img src="Screenshot%202026-05-15%20at%2009.37.00.png" alt="Botanix started with a simple question: How do we get bitcoin into the hands of every person in the world?">
+          <div class="card-footer"><a href="#" target="_blank" rel="noopener">View tweet</a></div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
